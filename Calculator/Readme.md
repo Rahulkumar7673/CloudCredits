@@ -1,56 +1,58 @@
-# 🧠 JavaScript Quiz App
+# 🧮 Responsive Calculator using HTML, CSS & JavaScript
 
-A simple and interactive quiz application built using HTML, CSS, and JavaScript. This project allows users to answer multiple-choice questions and get instant feedback, all in a responsive layout with clean design.
+This project is a responsive, dark-themed calculator built with web technologies. It performs basic arithmetic operations and supports both button and keyboard input, offering a smooth user experience on all screen sizes.
 
 # 🔐 Features
 
-❓ Multiple-choice questions with 3–4 options
+🔢 Perform basic operations: +, -, ×, ÷, (, ), .
 
-🧾 Real-time score tracking
+⌨️ Full keyboard support (Enter, Backspace, number keys, operators)
 
-✅ Instant feedback after each answer
+🎨 Modern dark UI with glowing display and active button states
 
-⏱️ Timer (optional) for quiz duration
+📱 Fully responsive — works on desktop and mobile
 
-📱 Responsive design for mobile and desktop
+💥 Error handling for invalid input expressions
 
-💡 Clean and minimal user interface
-
-🔄 Restart quiz functionality
+✨ Button hover, press animations, and neon display style
 
 # 📌 Objective
 
-To create an interactive quiz application using vanilla JavaScript that can:
+To develop a responsive, interactive calculator using pure HTML, CSS, and JavaScript, demonstrating:
 
-Dynamically render questions and answers
+DOM manipulation
 
-Validate user selections
+Event handling
 
-Track and display scores
+Keyboard integration
 
-Enhance user engagement through responsive design
+Responsive layout design
 
 # 🧰 Technologies Used
 
-HTML5 — For page structure
+HTML5 — UI structure
 
-CSS3 — For styling and responsiveness
+CSS3 — Styling and responsiveness
 
-JavaScript (Vanilla) — For quiz logic, interactivity, and DOM manipulation
+JavaScript (Vanilla) — Functional logic and keyboard input
 
-# 🧪 Sample Usage
+$ open index.html
+🖱️ Mouse Input:
+Click digits and operators
 
-bash
-Copy code
-Open in your browser
-$ open quiz.html
-Select the correct answer from options
+Press = to calculate
 
-Navigate through questions
+Press C to clear
 
-View your final score at the end
+# ⌨️ Keyboard Input:
 
-Restart to try again!
+Use number and operator keys
+
+Press Enter to calculate
+
+Press Backspace to delete
+
+Press c or C to clear
 
 # 📦 Installation
 
@@ -59,25 +61,22 @@ Copy code
 
 # repository (or download the folder)
 
-https://github.com/Rahulkumar7673/CloudCredits
-cd javascript-quiz-app
+https://github.com/Rahulkumar7673/CloudCredits/tree/main/Calculator
+cd calculator
 
 # 📥 Install the Dependencies
 
-✅ No external libraries needed
-Works with plain HTML, CSS, and JavaScript.
-Just open quiz.html in your browser.
+No external libraries needed — all code is pure HTML, CSS, and JS.
+Just open the file in a browser:
 
 # ⚙️ How It Works
 
-🧩 Question Array
-All quiz questions are stored in a JavaScript array of objects with fields: question, options[], and correctAnswer.
+🧠 appendValue(val) — adds digits/operators to the input field
 
-📲 Render Question
-Dynamically renders the current question and its options to the DOM.
+🧹 clearDisplay() — clears the display
 
-✅ Answer Selection
-On clicking an option, it checks if the answer is correct, updates the score, and moves to the next question.
+🧾 calculate() — evaluates the expression using eval() with error handling
 
-📊 Score Display
-At the end, shows the total score and an option to restart the quiz.
+⌨️ Keyboard Support — listens to key presses (keydown) and maps them to button actions
+
+💡 UI — styled with a CSS Grid layout, active/hover states, and glowing display
