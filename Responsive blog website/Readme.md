@@ -45,9 +45,6 @@ Esc Key: Close overlays or modals (if implemented)
 # Clone the repository
 https://github.com/Rahulkumar7673/CloudCredits
 
-# Navigate to folder
-cd responsive-blog
-
 # Open the main HTML file in a browser
 open index.html
 ✅ No additional setup required — works with just a browser
