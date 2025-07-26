@@ -42,11 +42,6 @@ If using JavaScript for keyboard-based navigation or search:
 
 Esc Key: Close overlays or modals (if implemented)
 
-# 📦 Installation
-🔧 Local Setup
-bash
-कॉपी करें
-बदलें
 # Clone the repository
 https://github.com/Rahulkumar7673/CloudCredits
 
