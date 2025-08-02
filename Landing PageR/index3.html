@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style3.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header class="navbar">
+      <div class="logo">🌟 Landing Page</div>
+      <ul class="nav-links">
+        <li onclick="showPage('home')">Home</li>
+        <li onclick="showPage('features')">Features</li>
+        <li onclick="showPage('contact')">Contact</li>
+      </ul>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Home Section -->
+      <section id="home" class="section">
+        <div class="overlay"></div>
+        <div class="card animated">
+          <h1>Welcome Friend! 😊</h1>
+          <p>Your journey to something beautiful starts here.</p>
+          <button onclick="showPage('features')">Explore Features</button>
+        </div>
+      </section>
+
+      <!-- Features Section -->
+      <section id="features" class="section hidden">
+        <div class="overlay"></div>
+        <div class="card animated">
+          <h1>Our Features 💖</h1>
+          <div class="features-grid">
+            <div class="feature-box fadeIn">🚀 Fast</div>
+            <div class="feature-box fadeIn delay-1">📱 Responsive</div>
+            <div class="feature-box fadeIn delay-2">🔒 Secure</div>
+            <div class="feature-box fadeIn delay-3">🎨 Beautiful</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section hidden">
+        <div class="overlay"></div>
+        <div class="card animated">
+          <h1>Contact Us ❤️</h1>
+          <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <textarea
+              id="message"
+              placeholder="Your Message"
+              rows="4"
+              required
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+          <p
+            id="formSuccess"
+            class="fadeIn"
+            style="display: none; color: green; margin-top: 15px"
+          >
+            ✅ Message sent successfully!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script3.js"></script>
+  </body>
+</html>

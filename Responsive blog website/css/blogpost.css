@@ -1,0 +1,143 @@
+.post-img {
+  height: 404px;
+  overflow: hidden;
+}
+.post-img img {
+  width: 100%;
+}
+
+.blog-post-content h1 {
+  text-align: center;
+}
+.blog-post-content p {
+  font-size: 18px;
+}
+
+.row {
+  display: flex;
+}
+.more-post {
+  flex-direction: column;
+  align-items: center;
+}
+.blogpost-meta {
+  display: flex;
+  justify-content: space-between;
+}
+
+.author-info {
+  margin: 12px 0;
+}
+.author-info div {
+  padding: 4px 0px;
+  font-family: var(--font2);
+}
+.social {
+  padding-right: 53px;
+  align-self: center;
+  cursor: pointer;
+}
+
+/* Default Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .nav-left ul li a,
+body.light-mode .nav-right .form-input,
+body.light-mode .btn,
+body.light-mode .home-article-content a {
+  color: #000;
+  background-color: #f0f0f0;
+}
+
+/* Default Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.light-mode .nav-left ul li a,
+body.light-mode .nav-right .form-input,
+body.light-mode .btn,
+body.light-mode .home-article-content a {
+  color: #000;
+  background-color: #f0f0f0;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .nav-left ul li a,
+body.dark-mode .nav-right .form-input,
+body.dark-mode .btn,
+body.dark-mode .home-article-content a {
+  color: #ffffff;
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .home-article {
+  border: 1px solid #333;
+  background-color: #1a1a1a;
+}
+
+body.dark-mode .form-input {
+  border: 1px solid #555;
+}
+
+body.dark-mode .btn {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark-mode hr {
+  border-color: #444;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust as needed */
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 2.5rem;
+  color: #333;
+  position: relative;
+  animation: fadeSlideIn 2s ease forwards;
+}
+
+/* Underline with animation */
+.content h2::after {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  align-items: flex-start; /* align at the top */
+  height: 100px; /* adjust height as needed */
+  padding-top: 30px; /* spacing from very top */
+  background-color: #f0f0f0;
+  text-align: center;
+  transition: width 0.5s ease;
+}
+
+.content h2:hover::after {
+  width: 60%;
+}
+
+/* Keyframe animation for entrance */
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
